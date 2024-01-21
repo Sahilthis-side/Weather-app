@@ -31,6 +31,8 @@ async function checkWeather(city = 'ranchi'){
             weathericon.src = "images/Mist.gif";
         } else if(data.weather[0].main == "Snow"){
             weathericon.src = "images/Snnow.png";
+        } else if(data.weather[0].main == "Haze"){
+            weathericon.src = "images/haze.png";
         }
         document.querySelector(".weather").style.display = "block";
         document.querySelector(".error").style.display = 'none';
